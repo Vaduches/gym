@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Doc</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>Gym</span>
+		</div>
+		<div id="about">
+			<a href="3.html" onclick="slowScroll('#contacts')" title="Вход">Вход<a/>
+			<a href="4.html" onclick="slowScroll('#faq')" title="Обратная связь">Обратная связь<a/>
+			<a href="https://support.wix.com/ru/article/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Политика конфиденциальности" onclick="slowScroll('#main')">Политика конфиденциальности<a/>
+			<a href="#" onclick="slowScroll('#overiew')" title="Преимущества">Преимущества<a/>
+		</div>
+	</header>
+	
+	<div id="top">
+		<h1>Спорт</h1>
+		<h3>Лучший способ изменить свою жизнь!</h3>
+	</div>
+	
+	<div id="main">
+	 <div class="intro"
+		
+		<span><h3>Большой выбор того, что может вам пригодиться!<h3></span>
+	 </div>
+	  <div class="text"
+		<span>Многие желающие пойти в спортзал не раз задавали себе вопрос: «С чего же начать?». Ведь не хочется после первой же тренировки потерять желание заниматься, испытав на следующий день ужасную боль в мышцах или получив травму. Чтобы грамотно подойти к первому дню в зале, попробуйте тренировку для новичков от профессиональных бодибилдеров. Она рассчитана на 4-5 недель и помогает проработать целых шесть мышечных групп и адаптироваться к нагрузкам.</span>
+	 </div>
+	</div>
+	
+	<div id="overview">
+	 <h2>Преимущества</h2>
+	 <h4>С нами все проще</h4>
+	  
+	 <div class="img">
+	  <img src="D:/ВИС11/сайт/images/444.jpg" alt="">
+	  <div class="container">
+	  <button class="button">
+	 <span>Тренировка Ног</span>
+	  </button>
+	  </div>
+	 </div>
+	 <div class="img">
+	  <img src="D:/ВИС11/сайт/images/5555.jpg" alt="">
+	  <button class="button">
+	  <span>Тренировка Рук</span>
+	  </button>
+	 </div>
+	 <div class="img">
+	 <img src="D:/ВИС11/сайт/images/123.jpg" alt="">
+	 <button class="button">
+	 <span>Тренировка Груди</span>
+	 </button>
+	 </div>
+	 <div class="img">
+	 <img src="D:/ВИС11/сайт/images/13.jpg" alt="">
+	  <button class="button">
+	 <span>Кардио Тренировка</span>
+	  </button>
+	 </div>
+	 </div>
+	 
+	 <div id="faq">
+	<div>
+		<span class="title"><h1>Оплата</h1></span><br>
+		<span class="heading">Как будет проходить оплата?<span>
+		<p>При покупке с вашей карты спишут только первый взнос. Оставшиеся платежи будут проходить автоматически, в указанные в договоре даты, например раз в две недели. Новые взносы спишутся с той же карты, которую вы использовали при покупке.</p>
+	</div>
+	<div>
+		<span class="title"><h1>Информация</h1></span><br>
+		<span class="heading">Что входит в услуги сервиса?<span>
+		<p>Первым делом нужно сформулировать желаемый результат. Затем выделяем основные направления в его достижении, например, выбираем подходящие виды нагрузки и функциональные секторы. </p>
+	</div>
+	<div>
+		<span class="title"><h1>Гарантии</h1></span><br>
+		<span class="heading">Какие гарантии есть?<span>
+		<p>Ваше здоровье и ваше тело будут вам благодарны, если вы подойдёте к исполнению мечты продуманно и организованно. Программа тренировок дает столько эффективности, сколько вложено в ее детализацию и индивидуальный подход.</p>
+	</div>
+	 
+	 
+	 
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script>
+		function slowScroll(id){
+			$('html,body').animate({
+				scrollTop: $(id).offset().top
+			}, 500;
+		}
+		
+		$(document).on("scroll", function () {
+		 if($(window).scrollTop() === 0)
+		  $("header").removeClass("fixed");
+		 else
+		  $("header").attr("class", "fixed");
+		});
+	</script>
+	
+
+</body>
+</html>
